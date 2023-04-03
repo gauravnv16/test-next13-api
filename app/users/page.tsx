@@ -7,7 +7,7 @@ export default function Home() {
 
     useEffect(()=>{
         fetch("/api/admin").then(res => res.json()).then(data => setUsers(data)).catch(err => console.log(err));
-    },[users]);
+    });
 
     return (
         <>
